@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hwb(40 10% 89%);
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #e91e63;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Main Section Styling */
+.main-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.main-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card {
+    display: block; /* Ensures cards appear one below the other */
+    margin: 20px auto; /* Centers the cards vertically */
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+    width: 300px; /* Fixed width for consistency */
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    line-height: 1.6;
+}
